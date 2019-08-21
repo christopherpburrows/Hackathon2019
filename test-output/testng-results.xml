@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="266184" started-at="2019-08-21T08:00:04Z" finished-at="2019-08-21T08:04:30Z">
+    <groups>
+    </groups>
+    <test name="Test with Chrome Browser" duration-ms="266184" started-at="2019-08-21T08:00:04Z" finished-at="2019-08-21T08:04:30Z">
+      <class name="testRunner.Youttube">
+        <test-method status="PASS" signature="beforeclass(java.lang.String)[pri:0, instance:testRunner.Youttube@23e028a9]" name="beforeclass" is-config="true" duration-ms="32121" started-at="2019-08-21T08:00:04Z" finished-at="2019-08-21T08:00:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method status="FAIL" signature="test()[pri:0, instance:testRunner.Youttube@23e028a9]" name="test" duration-ms="232956" started-at="2019-08-21T08:00:36Z" finished-at="2019-08-21T08:04:29Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Unable to scroll to video]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Unable to scroll to video
+at org.testng.Assert.fail(Assert.java:85)
+at WebPages.youtube.scrolltoTheVideo(youtube.java:207)
+at testRunner.Youttube.test(Youttube.java:60)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='video-title' and contains(normalize-space(.),'Harpreet Singh Wadhwa, Technical Lead - Build and Release, Symphony Telaca.')]"}
+  (Session info: chrome=76.0.3809.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YY172619', ip: '192.168.43.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\310276~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58773}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fe662f98932322874ca34907ba3c491d
+*** Element info: {Using=xpath, value=//a[@id='video-title' and contains(normalize-space(.),'Harpreet Singh Wadhwa, Technical Lead - Build and Release, Symphony Telaca.')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at WebPages.youtube.scrolltoTheVideo(youtube.java:204)
+... 14 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="tearing()[pri:0, instance:testRunner.Youttube@23e028a9]" name="tearing" is-config="true" duration-ms="1060" started-at="2019-08-21T08:04:29Z" finished-at="2019-08-21T08:04:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearing -->
+        <test-method status="PASS" signature="tearup()[pri:0, instance:testRunner.Youttube@23e028a9]" name="tearup" is-config="true" duration-ms="1" started-at="2019-08-21T08:04:30Z" finished-at="2019-08-21T08:04:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearup -->
+      </class> <!-- testRunner.Youttube -->
+    </test> <!-- Test with Chrome Browser -->
+  </suite> <!-- Suite -->
+</testng-results>

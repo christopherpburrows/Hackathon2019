@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test with Chrome Browser(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testRunner.Youttube">
+        <methods>
+          <include name="test"/>
+          <include name="tearing"/>
+          <include name="beforeclass"/>
+          <include name="tearup"/>
+        </methods>
+      </class> <!-- testRunner.Youttube -->
+    </classes>
+  </test> <!-- Test with Chrome Browser(failed) -->
+</suite> <!-- Failed suite [Suite] -->
